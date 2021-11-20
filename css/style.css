@@ -179,6 +179,13 @@ nav.sticky .menu-btn {
 }
 
 .home .text-five {
+  font-size: 40px;
+  color: var(--primary-color);
+  margin: 5px 0;
+  
+}
+
+.home .text-six {
   font-size: 23px;
   color: var(--black-color);
   margin: 5px 0;
