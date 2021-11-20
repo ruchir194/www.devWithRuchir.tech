@@ -4,7 +4,7 @@ let val;
 
 
 window.onscroll=function(){
-    if(document.documentElement.scrollTop>20){
+    if(document.documentElement.scrollTop > 200){
         nav.classList.add("sticky");
         scrollBtn.style.display="block";
     }
@@ -22,7 +22,7 @@ let menuBtn= document.querySelector(".menu-btn");
 let cancelBtn= document.querySelector(".cancel-btn");
 
 
-menuBtn.onClick=function(){
+menuBtn.onClick = function(){
     navBar.classList.add("active");
     menuBtn.style.opacity="0";
     menuBtn.style.pointerEvents="none";
@@ -31,23 +31,23 @@ menuBtn.onClick=function(){
 }
 
 
-cancelBtn.onClick=function(){
+cancelBtn.onClick = function(){
     navBar.classList.remove("active");
-    menuBtn.style.opacity="1";
-    menuBtn.style.pointerEvents="auto";
-    body.style.overflowX="auto";
-    scrollBtn.style.pointerEvents="auto";
+    menuBtn.style.opacity= "1";
+    menuBtn.style.pointerEvents= "auto";
+    body.style.overflowX= "auto";
+    scrollBtn.style.pointerEvents= "auto";
 }
 
 //sidebar nevigation bar closed while we c*/
 
-let navLinks=documents.querySelectorAll(".menu li a");
+let navLinks = documents.querySelectorAll(".menu li a");
 for(var i=0;i<navLinks.length;i++){
-    navLinks[i],addEventListener("click",function(){
+    navLinks[i],addEventListener("click", function() {
         navBar.classList.remove("active");
         menuBtn.style.opacity="1";
         menuBtn.style.pointerEvents="auto";
 
 
-    })
+    });
 }
